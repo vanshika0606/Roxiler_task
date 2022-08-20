@@ -5,10 +5,10 @@ const app = express();
 
 app.use(express.json());
 
-const user = require("./routes/userRoute.js");
-const course = require("./routes/courseRoute.js");
+const delivery = require("./routes/MilkRoute.js");
 
-app.use("/", user);
-app.use("/", course);
+
+app.use("/", delivery);
+
 
 module.exports = app;
